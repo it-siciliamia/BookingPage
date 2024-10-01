@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Oblik;
+    font-weight: bold;
+    src: url("../../fonts/Oblik-Bold.otf") format("opentype");
+}
+.booking-container {
+    max-width: 1275px;
+}
+.hero {
+    gap: 55px;
+    display: flex;
+}
+.social-app-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-self: flex-start;
+}
+.app-links {
+    width: 24px;
+    height: 24px;
+}
+.search-wrapper {
+    background-image: url("../../images/roombooking/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.booking-title {
+    text-align: center;
+    font-family: "Oblik";
+    padding-top: 278px;
+    font-size: 46px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.content {
+    padding: 30px 100px 60px;
+}
+.search {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    backdrop-filter: blur(30px);
+}
+.search-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    min-width: 225px;
+    padding: 12px;
+    border: 1px solid lightgrey;
+    position: relative;
+}
+.search-container:focus {
+    border: 1px solid #073762;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/roombooking/calendarIcon.svg");
+}
+.search-btn-container {
+    padding: 0;
+    border: none;
+}
+.search-btn {
+    color: white;
+    background-color: #455C80;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    border: none;
+    transition: all 0.2s;
+}
+.search-btn:focus {
+    outline: none;
+}
+.search-btn:active {
+    transform: scale(0.99);
+}
+.quantity {
+    position: relative;
+}
+.quantity-container {
+    min-width: 390px;
+    background-color: #F5F5F5;
+    top: 55px;
+    right: 0;
+    position: absolute;
+    padding: 24px;
+}
+.quantity-element {
+    padding: 16px 0;
+    border-top: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quantity-content {
+    width: 119px;
+    align-items: baseline;
+    padding: 6px 12px;
+    justify-content: space-between;
+    display: flex;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.count-person {
+    padding: 2px 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #14202B;
+    margin: 0;
+}
+.submit-amount {
+    color: white;
+    font-weight: 600;
+    padding: 14.5px 0;
+    width: 100%;
+    background-color: #073762;
+}
+.increment-btn {
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+.decrement-btn {
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+.increment-btn:active {
+    background-color: #F5F5F5;
+    border-radius: 25%;
+}
+.decrement-btn:active {
+    background-color: #F5F5F5;
+    border-radius: 25%;
+}
+.quantity-container-toggle-btn {
+    border: none;
+    background: none;
+}
+
+.bh_advantages-wrapper {
+    padding: 63px 60px 63px 80px;
+}
+.bh_advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: end;
+    gap: 60px;
+}
+.bh_advantages-item {
+    text-align: center;
+    transition: all 0.2s;
+}
+.bh_advantages-item:hover {
+    transform: scale(1.05);
+}
+.bh_advantages-text {
+    margin-top: 15px;
+    margin-bottom: 0;
+}

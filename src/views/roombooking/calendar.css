@@ -1,0 +1,98 @@
+.date-range-picker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.date-range__input {
+    cursor: pointer;
+    border: none;
+}
+.date-range__input:focus {
+    outline: none;
+}
+
+.date-range__input::placeholder {
+    color: #9e9e9e;
+}
+
+.calendar {
+    width: 450px;
+    position: absolute;
+    background-color: white;
+    z-index: 50;
+    top: 78px;
+}
+
+.calendar-days {
+    top: 95px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    row-gap: 5px;
+}
+
+.day {
+    text-align: center;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.day.outside-month {
+    color: #bdbdbd; /* Light gray for days outside the current month */
+}
+
+.day.current-month {
+    color: #212121; /* Darker color for days in the current month */
+}
+
+.day.selected {
+    background-color: rgba(196, 196, 196, 0.15); /* Light blue background for selected days */
+    
+}
+
+.day:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+.day.disabled {
+    color: #ccc; /* Light gray for disabled days */
+    cursor: not-allowed; /* Indicate that it's not selectable */
+  }
+  .calendar-header {
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .input-toggle {
+    display: inline-block;
+    position: relative;
+  }
+  .input-toggle-btn {
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/roombooking/calendarIcon.svg");
+    background-repeat: no-repeat;
+  }
+  .input-toggle-btn:active {
+    outline: none;
+  }
+  .day.first-last-selected {
+    background-color: #073762; /* Dark blue for first and last selected days */
+    color: white;
+}
