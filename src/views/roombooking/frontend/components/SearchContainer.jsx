@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchRooms, fetchAvailability, createBooking } from "./apiService";
+import { fetchRooms, fetchAvailability, createBooking } from "../services/apiService";
 import minusIcon from "../../images/roombooking/minus.svg";
 import plusIcon from "../../images/roombooking/plus.svg";
 import arrowDown from "../../images/roombooking/ArrowDown.svg";

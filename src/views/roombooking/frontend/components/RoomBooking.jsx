@@ -1,8 +1,8 @@
 // RoomBooking.jsx
 import Advantages from "./Advantages"
 import HeaderIcons from "./HeaderIcons"
-import "./index.css"
-import "./calendar.css"
+import "../styles/index.css"
+import "../styles/calendar.css"
 import SearchContainer from "./SearchContainer"
 
 const RoomBooking = () => {

@@ -1,16 +1,18 @@
+// backend/api/beds24Api.js
+
 const express = require("express");
 const app = express();
 const fetch = require("node-fetch");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+// Import config values
+const { apiKey, propKey, propId } = require("../.config.js");
+
 app.use(bodyParser.json());
 app.use(cors({ origin: "*" }));
 
-const apiKey = "BookingpageBlueHouse";
-const propKey = "BB3578IceZenoLand";
-const propId = "3578"; // Property ID
-const roomIds = [9748, 7264, 59038, 110158, 42714]; // Add rooms IDs here
+const roomIds = [9748, 7264, 59038, 110158, 42714]; // Add room IDs here
 
 // Get Descriptions for rooms
 app.get("/api/rooms", async (req, res) => {
