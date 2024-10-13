@@ -4,8 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import * as moment from "moment";
 import Paypal from "./PayPal";
-import StripeCheckout from "../StripeCheckout/StripeCheckout";
-import { createStripeSession } from "../apiService"; // Import the function to create Stripe session
+//import StripeCheckout from "../StripeCheckout/StripeCheckout";
+import { createStripeSession } from "../services/apiService"; // Import the function to create Stripe session
 
 function Payment({ price, userInfo, checkIn, checkOut, name, quantity }) {
   const {
